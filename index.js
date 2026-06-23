@@ -14,17 +14,25 @@ app.use(cors({ origin: originesPermitidos }));
 app.use(express.json({ limit: '50mb' })); // El límite sube a 20mb para aceptar imágenes en Base64
 
 // ── DATOS ────────────────────────────────────────────────
+const fs = require("fs");
+
 const articulos = [
 {
   id: 1,
-  titulo: "",
-  //subtitulo: "",
-  autor: "",
-  categoria: "",
-  //fecha: "",
-  //descripcion1: "",
-  descripcion2: "",
-  //galeria: [],
+  titulo: "Museo Juan Manuel Blanes:",
+  subtitulo: "origen de un patrimonio cultural uruguayo",
+  autor: "Stephanie Puñales",
+  categoria: "Patrimonio",
+  fecha: "2026/07/02",
+  descripcion1: fs.readFileSync(
+    "./articulos/museo-blanes-1.html",
+    "utf8"
+  ),
+  descripcion2: fs.readFileSync(
+    "./articulos/museo-blanes-2.html",
+    "utf8"
+  ),
+  galeria: [],
 },
 
 {
