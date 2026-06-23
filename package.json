@@ -1,0 +1,31 @@
+{
+  "name": "proyecto-back",
+  "version": "1.0.0",
+  "description": "API REST con Node.js y Express.\r ## Instalación\r ```\r npm install\r ```\r ## Configuración\r Copiar .env.example a .env y completar los valores:\r ```\r cp .env.example .env\r ```\r ## Correr el servidor\r ```\r npm run dev\r ```\r ## Rutas\r | Método | Ruta | Descripción |\r |--------|----------------|------------------------------|\r | GET | /articulos | Devuelve todos los articulos |\r | GET | /articulos/:id | Devuelve un artículo por id |\r | POST | /articulos | Crea un artículo nuevo |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephaniepunales/Proyecto-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/stephaniepunales/Proyecto-back/issues"
+  },
+  "homepage": "https://github.com/stephaniepunales/Proyecto-back#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
