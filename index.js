@@ -12,6 +12,7 @@ const originesPermitidos = [
 // ── MIDDLEWARES ──────────────────────────────────────────
 app.use(cors({ origin: originesPermitidos }));
 app.use(express.json({ limit: '50mb' })); // El límite sube a 20mb para aceptar imágenes en Base64
+app.use("/img", express.static("img"));
 
 // ── DATOS ────────────────────────────────────────────────
 const fs = require("fs");
@@ -32,55 +33,65 @@ const articulos = [
     "./articulos/museo-blanes-2.html",
     "utf8"
   ),
-  galeria: [],
+  portada: "/img/museo-blanes-portada.jpg",
+  galeria: [
+    "/img/museo-blanes-1.jpg",
+    "/img/museo-blanes-2.jpg",
+    "/img/museo-blanes-3.jpg",
+    "/img/museo-blanes-4.jpg",
+  ],
 },
 
 {
   id: 2,
   titulo: "",
-  //subtitulo: "",
+  subtitulo: "",
   autor: "",
   categoria: "",
-  //fecha: "",
-  //descripcion1: "",
+  fecha: "",
+  descripcion1: "",
   descripcion2: "",
-  //galeria: [],
+  portada: "",
+  galeria: [],
 },
 
 {
   id: 3,
   titulo: "",
-  //subtitulo: "",
+  subtitulo: "",
   autor: "",
   categoria: "",
-  //fecha: "",
-  //descripcion1: "",
+  fecha: "",
+  descripcion1: "",
   descripcion2: "",
-  //galeria: [],
+  portada: "",
+  galeria: [],
 },
 
 {
   id: 4,
   titulo: "",
-  //subtitulo: "",
+  subtitulo: "",
   autor: "",
   categoria: "",
-  //fecha: "",
-  //descripcion1: "",
+  fecha: "",
+  descripcion1: "",
   descripcion2: "",
-  //galeria: [],
+  portada:"",
+  galeria: [],
 },
 
 {
   id: 5,
   titulo: "",
-  //subtitulo: "",
+  subtitulo: "",
   autor: "",
   categoria: "",
-  //fecha: "",
-  //descripcion1: "",
+  fecha: "",
+  descripcion1: "",
   descripcion2: "",
-  //galeria: [],
+  portada: "",
+  galeria: [],
 },
 
 ];
