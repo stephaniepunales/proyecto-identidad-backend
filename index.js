@@ -11,7 +11,7 @@ const originesPermitidos = [
 
 // ── MIDDLEWARES ──────────────────────────────────────────
 app.use(cors({ origin: originesPermitidos }));
-app.use(express.json({ limit: '50mb' })); // El límite sube a 20mb para aceptar imágenes en Base64
+app.use(express.json({ limit: '50mb' }));
 app.use("/img", express.static("img"));
 
 // ── DATOS ────────────────────────────────────────────────
@@ -71,7 +71,7 @@ const articulos = [
   titulo: "Heritage Day in Uruguay",
   subtitulo: "",
   autor: "Valeria Mendez",
-  categoria: "Art",
+  categoria: "Heritage",
   fecha: "2026/07/02",
   descripcion1: fs.readFileSync(
     "./articulos/patrimonio-ingles.html",
