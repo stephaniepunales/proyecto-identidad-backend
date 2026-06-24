@@ -117,7 +117,7 @@ app.get("/articulos/:id", (req, res) => {
 app.post("/articulos", (req, res) => {
   const { titulo, subtitulo, autor, categoria, fecha, descripcion1, descripcion2, portada, galeria } = req.body;
 
-  if (!titulo || !autor || !descripcion1) {
+  if (!titulo || !autor || !descripcion1 || !descripcion2) {
     return res.status(400).json({
       error: "Los campos título, autor y contenido son obligatorios",
     });
