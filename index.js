@@ -23,7 +23,7 @@ const articulos = [
   titulo: "Museo Juan Manuel Blanes:",
   subtitulo: "origen de un patrimonio cultural uruguayo",
   autor: "Stephanie Puñales",
-  categoria: "Patrimonio",
+  categoria: "Historia",
   fecha: "2026/07/02",
   descripcion1: fs.readFileSync(
     "./articulos/museo-blanes-1.html",
@@ -44,28 +44,47 @@ const articulos = [
 
 {
   id: 2,
-  titulo: "",
-  subtitulo: "",
-  autor: "",
-  categoria: "",
-  fecha: "",
-  descripcion1: "",
-  descripcion2: "",
-  portada: "",
-  galeria: [],
+  titulo: "El Tango:",
+  subtitulo: "memoria, identidad y patrimonio cultural del Uruguay.",
+  autor: "Valeria Mendez",
+  categoria: "Arte",
+  fecha: "2026/07/02",
+  descripcion1: fs.readFileSync(
+    "./articulos/el-tango-1.html",
+    "utf8"
+  ),
+  descripcion2: fs.readFileSync(
+    "./articulos/el-tango-2.html",
+    "utf8"
+  ),
+  portada: "/img/tango-portada.jpg",
+  galeria: [
+    "/img/tango2.jpg",
+    "/img/tango3.jpg",
+    "/img/tango4 (3).jpg",
+    "/img/tango5.jpg",
+  ],
 },
 
 {
   id: 3,
-  titulo: "",
+  titulo: "Heritage Day in Uruguay",
   subtitulo: "",
-  autor: "",
-  categoria: "",
-  fecha: "",
-  descripcion1: "",
+  autor: "Valeria Mendez",
+  categoria: "Art",
+  fecha: "2026/07/02",
+  descripcion1: fs.readFileSync(
+    "./articulos/patrimonio-ingles.html",
+    "utf8"
+  ),
   descripcion2: "",
-  portada: "",
-  galeria: [],
+  portada: "/img/patrimonio-portada.jpg",
+  galeria: [
+    "/img/patrimonio-1.jpg",
+    "/img/patrimonio2.jpg",
+    "/img/patrimonio3.jpg",
+    "/img/patrimonio4.jpg",
+  ],
 },
 
 {
