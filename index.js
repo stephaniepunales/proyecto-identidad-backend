@@ -94,8 +94,14 @@ const articulos = [
   autor: "",
   categoria: "",
   fecha: "",
-  descripcion1: "",
-  descripcion2: "",
+  descripcion1: fs.readFileSync(
+    "./articulos/.html",
+    "utf8"
+  ),
+  descripcion2: fs.readFileSync(
+    "./articulos/.html",
+    "utf8"
+  ),
   portada:"",
   galeria: [],
 },
