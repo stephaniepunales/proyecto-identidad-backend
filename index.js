@@ -95,11 +95,11 @@ const articulos = [
   categoria: "",
   fecha: "",
   descripcion1: fs.readFileSync(
-    "./articulos/.html",
+    "./articulos/agus1.html",
     "utf8"
   ),
   descripcion2: fs.readFileSync(
-    "./articulos/.html",
+    "./articulos/agus2.html",
     "utf8"
   ),
   portada:"",
