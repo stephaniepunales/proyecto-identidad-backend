@@ -89,11 +89,11 @@ const articulos = [
 
 {
   id: 4,
-  titulo: "",
-  subtitulo: "",
-  autor: "",
-  categoria: "",
-  fecha: "",
+  titulo: "Colonia del Sacramento",
+  subtitulo: "Una ciudad que preserva nuestra historia",
+  autor: "Agustin Nuñez",
+  categoria: "Arquitectura",
+  fecha: "2026/07/02",
   descripcion1: fs.readFileSync(
     "./articulos/agus1.html",
     "utf8"
@@ -102,21 +102,34 @@ const articulos = [
     "./articulos/agus2.html",
     "utf8"
   ),
-  portada:"",
-  galeria: [],
+  portada:"/img/portada-agus.jpg",
+  galeria: [
+    "/img/agus1.jpg",
+    "/img/agus2.jpg",
+    "/img/agus3.jpg",
+    "/img/agus4.jpg",
+  ],
 },
 
 {
   id: 5,
-  titulo: "",
-  subtitulo: "",
-  autor: "",
+  titulo: "The Lighthouse of Colonia del Sacramento",
+  subtitulo: "A beacon of history",
+  autor: "Agustin Nuñez",
   categoria: "",
-  fecha: "",
-  descripcion1: "",
+  fecha: "Architecture",
+  descripcion1: fs.readFileSync(
+    "./articulos/agus-ingles.html",
+    "utf8"
+  ),
   descripcion2: "",
-  portada: "",
-  galeria: [],
+  portada: "/img/portada-agus.jpg",
+  galeria: [
+    "/img/agus1.jpg",
+    "/img/agus2.jpg",
+    "/img/agus3.jpg",
+    "/img/agus4.jpg",
+  ],
 },
 
 ];
