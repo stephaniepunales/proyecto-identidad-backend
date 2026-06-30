@@ -116,8 +116,8 @@ const articulos = [
   titulo: "The Lighthouse of Colonia del Sacramento",
   subtitulo: "A beacon of history",
   autor: "Agustin Nuñez",
-  categoria: "",
-  fecha: "Architecture",
+  categoria: "Architecture",
+  fecha: "2026/07/02",
   descripcion1: fs.readFileSync(
     "./articulos/agus-ingles.html",
     "utf8"
